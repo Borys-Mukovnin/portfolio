@@ -1,0 +1,157 @@
+@keyframes appear {
+    from {opacity: 0%;}
+    to {opacity: 100%;}
+}
+
+body {
+    margin: 0.3%;
+    overflow-x:hidden;
+    animation: appear 2s;
+}
+
+footer {
+    margin-top: 5vh;
+}
+.footer{
+    background-image: linear-gradient(to right, rgb(87, 87, 87), rgb(185, 185, 185), rgb(87, 87, 87));
+    border-radius: 25px;
+    margin: 0.45%;
+    padding: 15px 0px;
+    font-family: 'Play', sans-serif;
+    text-align:center;
+    height: 18vh;
+    }
+    
+    .footer .row{
+    width:100%;
+    margin:1% 0%;
+    padding:0.6% 0%;
+    color:gray;
+    font-size:0.8em;
+    }
+    
+    .footer .row a{
+    text-decoration:none;
+    color:gray;
+    transition:0.5s;
+    padding: 5px solid black    ;
+    }
+    
+    .footer .row a:hover{
+    color:#fff;
+    }
+    
+    .footer .row a i{
+    font-size:3em;
+    margin:0% 1%;
+    }
+    
+    @media (max-width:720px){
+    .footer{
+    text-align:left;
+    padding: 5%;
+    }
+    .footer .row a i{
+    margin:0% 3%;
+    }
+    }
+#Copyright {
+    font-size: 15px;
+}
+a {
+    color: black;
+}
+a:hover {
+    text-decoration: none;
+    color: black;
+}
+
+header {
+    display: block;
+    text-align: center;
+    border-radius: 25px;
+    height: 25vh;
+    background-image: linear-gradient(to right, rgb(87, 87, 87), rgb(185, 185, 185), rgb(87, 87, 87));
+}
+
+header h1 {
+    font-size: 5rem;
+    line-height: 18vh;
+}
+nav {
+    margin: 0.4%;
+    display: flex;
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+
+ul li {
+    list-style: none;
+}
+
+nav ul {
+    text-align: center;
+    border-radius: 25px;
+    width: 35%;
+    height: 7vh;
+    position: relative;
+    top: -8rem;
+    left: 2.5rem;
+}
+
+nav li {
+    display: inline-block;
+    font-size: 2.5rem;
+    padding: 0 8rem 0 0;
+    line-height: 7vh;
+}
+nav ul li a {
+    position: relative;
+}
+nav ul li a::after {
+    content: '';
+    width: 0%;
+    height: 3px;
+    background: #ff004f;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+}
+
+nav ul li a:hover::after {
+    width: 100%;
+    color: white;
+}
+
+section {
+    display: block;
+    text-align: center;
+}
+article ul li {
+    display: inline-block;
+    border: 1px solid black;
+    border-radius: 25px;
+    font-size: 2rem;
+    padding: 0.7rem;
+    height: 4.7rem;
+    position: relative;
+    left: -2rem;
+    margin: 2rem 0 2rem 0;
+}
+.edu {
+    height: 7rem;
+}
+
+article ul li:hover {
+    transform: scale(1.1);
+    position: relative;
+    top: -5px;
+}
+
+.abme {
+    margin: 2rem 25rem 2rem 25rem;
+    font-size: 2rem;
+}
